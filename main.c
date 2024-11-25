@@ -10,7 +10,9 @@
 int main(void)
 {
 
-    _printf("Let's try to printf a simple %c %s %% %q sentence.\n");
-    printf("Let's try to printf a simple %c sentence.\n");
+    _printf("Let's try to printf a simple sentence with %c.\n", 'd');
+    _printf("bonjour\n");
+    printf("bonjour\n");
+    printf("Let's try to printf a simple sentence with %c.\n", 'd');
     return (0);
 }
