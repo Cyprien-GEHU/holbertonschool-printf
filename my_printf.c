@@ -19,12 +19,12 @@ int _printf(const char *format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i] != '%')
-			putchar(format[i]);
+			print_char(format[i]);
 		else
 		{
 			i++;
 			if (format[i] == 'c' || format[i] == 's' || format[i] == '%')
-				printf("777");
+				print_char('7');
 		}
 		i++;
 	}
