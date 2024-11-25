@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <starg.h>
+#include "main.h"
 
 /**
  * print_char - print a character from va_list
