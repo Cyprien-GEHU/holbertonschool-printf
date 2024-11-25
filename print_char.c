@@ -1,12 +1,18 @@
-#include <unistd.h>
+#include <starg.h>
+#include "main.h"
 
 /**
- * print_char - writes the character c to stdout
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_char - print a character from va_list
+ * @list: list where the character is
+ * Return: 1
  */
-int print_char(char c)
+
+int print_char(va_list list)
 {
-	return (write(1, &c, 1));
+	char character;
+
+	character = va_arg(list, int);
+	_putchar(character);
+
+return (1);
 }
