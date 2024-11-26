@@ -27,7 +27,7 @@ int print_int_or_dec(va_list args)
 	num = n < 0 ? -n : n;
 	while (pos > 0)
 	{
-		digit = num / exp;
+		digit = num / pos;
 		_putchar(digit + '0');
 		num = num - (digit * pos);
 		pos = pos / 10;
