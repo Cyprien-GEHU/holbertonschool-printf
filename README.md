@@ -1,3 +1,3 @@
 # Holberton School \_printf
 
-Creae our own fucntion printf names \_printf
+Create our own fucntion printf names \_printf
