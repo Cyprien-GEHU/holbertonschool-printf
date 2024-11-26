@@ -1,3 +1,4 @@
-# Holberton School \_printf
+# Holberton School - \_printf
 
-Create our own fucntion printf names \_printf
+Creation of our own function printf names \_printf.
+\_printf is a function that formats and prints data.
