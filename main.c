@@ -10,8 +10,8 @@
 int main(void)
 {
 
-    _printf("Let's try to printf a simple sentence with %c.\n", 'd');
-    printf("Let's try to printf a simple sentence with %c.\n", 'd');
+    _printf("Let's try to printf a simple sentence with %c\n", 'd');
+    printf("Let's try to printf a simple sentence with %c\n", 'd');
     _printf("%s %s\n", "bonjour", "poto");
     printf("%s %s\n", "bonjour", "poto");
     _printf("%%\n");
