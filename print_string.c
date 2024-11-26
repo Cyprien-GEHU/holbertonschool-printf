@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * print_string - print more than one character
@@ -10,18 +11,20 @@
 int print_string(va_list list)
 {
 	int i = 0;
+	int length = 0;
 	char *string;
 
-	string = va_arg(list);
+	string = va_arg(list, char*);
 
-	if (*string == NULL)
-		return (NULL);
+	if (string == NULL)
+		return (0);
 
 	while (string[i] != '\0')
 	{
 		_putchar(string[i]);
 		i++;
+		length++;
 	}
 
-return (0);
+return (length);
 }
