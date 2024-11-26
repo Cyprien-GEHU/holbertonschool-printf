@@ -18,7 +18,7 @@ int (*get_function(const char *format))(va_list)
 		{NULL, NULL}
 	};
 	int i;
-
+	
 	for (i = 0; check[i].letter; i++)
 	{
 		if (*check[i].letter == *format)
