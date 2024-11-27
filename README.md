@@ -39,5 +39,5 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 #### Flowchart
 ```mermaid
 graph TB;
-    id1[[_printf(const char *format, ...)]]-->id1[while (format)];
+    A[_printf]-->B(while*format);
 ```
