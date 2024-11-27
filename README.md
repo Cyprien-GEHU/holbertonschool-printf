@@ -40,9 +40,9 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 
 ```mermaid 
 flowchart TD
-    A[Christmas] -->|Get money| B(Go Shopping);
-    B --> C{Let me think};
-    C -->|one| D[Laptop];
-    C -->|two| E[iPhone];
-    C -->|three| F[fa:fa-car Car|;
+    A[Christmas]-->|Get money| B(Go Shopping);
+    B-->C{Let me think};
+    C-->|one| D[Laptop];
+    C-->|two| E[iPhone];
+    C-->|three| F[Car|;
 ```
