@@ -38,6 +38,28 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 
 #### Flowchart
 ```mermaid
-graph TB;
-    A[_printf]-->B(while*format);
+flowchart TB
+    A[_printf] --> B(while 
+    *format);
+    B-->C{*format != '%'};
+    C-->F((non))
+    D-->E[Print *format
+    i++]
+    E-->B
+    C-->D((oui))
+    F-->G[increment +1]
+    G-->H{if '%' + 1 == *CHECK}
+    H-->I((non))
+    H-->J((oui))
+    I-->K[return : NULL]
+    J-->L{CHECK = 'c'}
+    J-->M{CHECK = 's'}
+    J-->N{CHECK = '%'}
+    J-->O{CHECK = 's'}
+    J-->P{CHECK = 'd'}
+    L-->Q[call print_char]
+    M-->R[call print_string]
+    N-->S
+    O-->T
+    P-->U
 ```
