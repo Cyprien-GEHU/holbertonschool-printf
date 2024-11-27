@@ -38,8 +38,8 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 
 #### Flowchart
 ```mermaid
-graph TD;
-    A-->B;
+graph TB;
+    id1[[_printf(const char *format, ...)]]-->id1[while (format)];
     A-->C;
     B-->D;
     C-->D;
