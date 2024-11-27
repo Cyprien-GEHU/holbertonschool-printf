@@ -14,7 +14,7 @@ This will be compiled this way :
 ``gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c``
 
 
-## Requirements
+### Requirements
 
 #### Betty Style
 All the files are written with the [Betty coiding style](https://www.holbertonschool.fr/post/quest-ce-que-la-regle-betty-dans-le-langage-de-programmation-c)
@@ -34,32 +34,41 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 | print_string.c     | Contains `print_string()`that prints a string (***%s***)                     |
 | print_37.c         | Contains `print_37()`that printf '%' (***%%***)                              |
 | print_int_or_dec.c | Contains `print_int_or_dec()` that prints decimals (***%i***) or (***%d***)  |
-
+| main.h             | Contains all the headers, prototypes and structure needed                    |
 
 #### Flowchart
+We've started the project to re-write the `\_printf` by writting a flowchart to organise our code.
+
 ```mermaid
 flowchart TB
     A[_printf] --> B(while 
     *format);
     B-->C{*format != '%'};
-    C-->F((non))
+    C-->F((no))
     D-->E[Print *format
     i++]
     E-->B
-    C-->D((oui))
+    C-->D((yes))
     F-->G[increment +1]
     G-->H{if '%' + 1 == *CHECK}
-    H-->I((non))
-    H-->J((oui))
+    H-->I((no))
+    H-->J((yes))
     I-->K[return : NULL]
     J-->L{CHECK = 'c'}
     J-->M{CHECK = 's'}
     J-->N{CHECK = '%'}
-    J-->O{CHECK = 's'}
+    J-->O{CHECK = 'i'}
     J-->P{CHECK = 'd'}
-    L-->Q[call print_char]
-    M-->R[call print_string]
-    N-->S
-    O-->T
-    P-->U
+    L-->Q[call print_char()]
+    M-->R[call print_string()]
+    N-->S[call print_37()]
+    O-->T[call print_int_or_dec()]
+    P-->U[call print_int_or_dsec()]
+    Q-->V[increment 
+    and continue]
+    R-->V
+    S-->V
+    T-->V
+    U-->V
+    V-->C
 ```
