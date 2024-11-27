@@ -59,11 +59,11 @@ flowchart TB
     J-->N{CHECK = '%'}
     J-->O{CHECK = 'i'}
     J-->P{CHECK = 'd'}
-    L-->Q[call print_char()]
-    M-->R[call print_string()]
-    N-->S[call print_37()]
-    O-->T[call print_int_or_dec()]
-    P-->U[call print_int_or_dsec()]
+    L-->Q[call print_char]
+    M-->R[call print_string]
+    N-->S[call print_37]
+    O-->T[call print_int_or_dec]
+    P-->U[call print_int_or_dsec]
     Q-->V[increment 
     and continue]
     R-->V
