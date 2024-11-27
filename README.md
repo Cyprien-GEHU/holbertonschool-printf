@@ -36,11 +36,13 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 | print_int_or_dec.c | Contains `print_int_or_dec()` that prints decimals (***%i***) or (***%d***)  |
 
 
-#### Flowchart 
+#### Flowchart
+
+```mermaid 
 flowchart TD
-|   A[Christmas] -->|Get money| B(Go Shopping)
-|   B --> C{Let me think}
-|   C -->|one| D[Laptop]
-|   C -->|two| E[iPhone]
-|   C -->|three| F[fa:fa-car Car|
-|
+    A[Christmas] -->|Get money| B(Go Shopping);
+    B --> C{Let me think};
+    C -->|one| D[Laptop];
+    C -->|two| E[iPhone];
+    C -->|three| F[fa:fa-car Car|;
+``
