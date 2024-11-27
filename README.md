@@ -41,7 +41,6 @@ We've started the project to re-write the `\_printf` by writting a flowchart to 
 
 ```mermaid
 flowchart TB
-flowchart TB
     A[_printf] --> B(while 
     *format)
     B --> C{*format != '%'}
