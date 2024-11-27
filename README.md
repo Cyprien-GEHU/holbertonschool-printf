@@ -41,34 +41,34 @@ We've started the project to re-write the `\_printf` by writting a flowchart to 
 
 ```mermaid
 flowchart TB
+flowchart TB
     A[_printf] --> B(while 
-    *format);
-    B-->C{*format != '%'};
-    C-->F((no))
-    D-->E[Print *format
-    i++]
-    E-->B
-    C-->D((yes))
-    F-->G[increment +1]
-    G-->H{if '%' + 1 == *CHECK}
-    H-->I((no))
-    H-->J((yes))
-    I-->K[return : NULL]
-    J-->L{CHECK = 'c'}
-    J-->M{CHECK = 's'}
-    J-->N{CHECK = '%'}
-    J-->O{CHECK = 'i'}
-    J-->P{CHECK = 'd'}
-    L-->Q[call print_char]
-    M-->R[call print_string]
-    N-->S[call print_37]
-    O-->T[call print_int_or_dec]
-    P-->U[call print_int_or_dsec]
-    Q-->V[increment 
-    and continue]
-    R-->V
-    S-->V
-    T-->V
-    U-->V
-    V-->C
+    *format)
+    B --> C{*format != '%'}
+    C --> X((No)) --> F[increment +1]
+    F --> G{if '%' + 1 == *CHECK}
+    G --> W((No)) --> K[return
+    an error]
+    G --Yes --> J[Identify 
+    CHECK]
+    J --> L{CHECK = 'c'}
+    J --> M{CHECK = 's'}
+    J --> N{CHECK = '%'}
+    J --> O{CHECK = 'i'}
+    J --> P{CHECK = 'd'}
+    L --> Q[call print_char]
+    M --> R[call print_string]
+    N --> S[call print_37]
+    O --> T[call print_int_or_dec]
+    P --> U[call print_int_or_dec]
+    Q --> V[increment 
+    continue loop]
+    R --> V
+    S --> V
+    T --> V
+    U --> V
+    V --> B
+    C --> Y((Yes)) --> D[Print *format 
+    continue loop]
+    D --> B
 ```
