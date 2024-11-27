@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdio.h>
+
 /**
  *print_int_or_dec - prints a integer or decimal
  *@args: argument to print
@@ -7,35 +9,43 @@
  */
 int print_int_or_dec(va_list args)
 {
-	int n = va_arg(args, int);
-	int num = n, last = n % 10, digit, pos = 1;
+	int number = va_arg(args, int);
 	int i = 0;
+	int n = 0;
+	int digit;
+	int x = number;
+	int div = 1;
 
-	if (n < 0)
+	if (number < 0)
 	{
 		_putchar('-');
-		num = -num;
-		last = -last;
+		number *= -1;
 		i++;
 	}
 
-	while (num / 10 != 0)
+	if (number >= 0 && number < 9)
 	{
-		pos *= / 10;
-	}
-
-	num = n < 0 ? -n : n;
-	while (pos > 0)
-	{
-		digit = num / pos;
-		_putchar(digit + '0');
-		num = num - (digit * pos);
-		pos = pos / 10;
+		_putchar(number + '0');
 		i++;
 	}
 
-	_putchar(last + '0');
-	i++;
+	if (number > 9)
+	{
+		while (x / 10 != 0)
+		{
+			n++;
+			x = x / 10;
+			div *= 10;
+		}
 
+		while (n >= 0)
+		{
+			digit = (number / div) % 10;
+			_putchar(digit + '0');
+			div /= 10;
+			n--;
+			i++;
+		}
+	}
 	return (i);
 }

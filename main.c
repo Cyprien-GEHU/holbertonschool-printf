@@ -16,5 +16,7 @@ int main(void)
     printf("%s %s\n", "bonjour", "poto");
     _printf("%%\n");
     printf("%%\n");
+    _printf("%i %d\n", 102785, -355373); 
+    printf("%i %d\n", 102785, -355373);  
     return (0);
 }
