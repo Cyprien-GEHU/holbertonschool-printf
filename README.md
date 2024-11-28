@@ -41,14 +41,14 @@ We've started the project to re-write the `\_printf` by writting a flowchart to 
 
 ```mermaid
 flowchart TB
-    A[_printf] --> B(while
-    *format)
-    B --> C{*format == '%'}
-    C --> X((Yes)) --> F[increment +1]
+    A[_printf] --> B(while *format)
+    B --> AA((Non)) --> Z[Stop program]
+    B --> AB((yes)) --> C{*format == '%'}
+    C --> X((Yes)) --> F[format  i + 1]
     F --> G{if '%' + 1 == *CHECK}
-    G --> W((No)) --> K[print % and format]
-    G --No --> J[Identify
-    CHECK]
+    G --> W((No)) --> K[print %  and<br>the next character]
+    K --> V[increment<br>continue loop]
+    G --> J[Identify CHECK]
     J --> L{CHECK = 'c'}
     J --> M{CHECK = 's'}
     J --> N{CHECK = '%'}
@@ -59,14 +59,11 @@ flowchart TB
     N --> S[call print_37]
     O --> T[call print_int_or_dec]
     P --> U[call print_int_or_dec]
-    Q --> V[increment
-    continue loop]
+    Q --> V
     R --> V
     S --> V
     T --> V
     U --> V
     V --> B
-    C --> Y((Yes)) --> D[Print *format
-    continue loop]
-    D --> B
+    C --> Y((No)) --> D[Print *format<br>continue loop]
 ```
