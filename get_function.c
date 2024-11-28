@@ -26,5 +26,5 @@ int (*get_function(const char *format))(va_list list)
 		if (*check[i].letter == *format)
 			return (check[i].function);
 	}
-	return (0);
+return (0);
 }
