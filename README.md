@@ -27,14 +27,16 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 #### Repository files list
 
 | File name          | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- |
-| my_printf.c        | Contains the main function `_printf()`                                       |
+| -----------------: | ---------------------------------------------------------------------------- |
+| _printf.c          | Contains the main function `_printf()`                                       |
 | get_function.c     | Contains `get_function()` that checks \*format and calls the function needed |
 | print_char.c       | Contains `print_char()` that prints a character (***%c***)                   |
 | print_string.c     | Contains `print_string()`that prints a string (***%s***)                     |
 | print_37.c         | Contains `print_37()`that printf '%' (***%%***)                              |
 | print_int_or_dec.c | Contains `print_int_or_dec()` that prints decimals (***%i***) or (***%d***)  |
 | main.h             | Contains all the headers, prototypes and structure needed                    |
+| man_3_printf       | This is the man page of our _printf                                          |
+| _putchar.c         | Contains our own puchar command permitting to print a character              |
 
 #### Flowchart
 We've started the project to re-write the `\_printf` by writting a flowchart to organise our code.
