@@ -43,7 +43,7 @@ int main(void)
 
 	printf("Marque le nombre choisi:\n");
 	scanf("%d", &number);
-	printf("Nombre choisi: %d\n", number);
+	printf("Nombre choisi: % \n", number);
 	print_int(number);
 	_putchar('\n');
 
