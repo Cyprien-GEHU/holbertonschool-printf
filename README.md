@@ -16,6 +16,8 @@ This will be compiled this way :
 
 ### Requirements
 
+Our project has been coded on Ubuntu 22.04 and gcc is version 13.2.0
+
 #### Betty Style
 All the files are written with the [Betty coiding style](https://www.holbertonschool.fr/post/quest-ce-que-la-regle-betty-dans-le-langage-de-programmation-c)
 
@@ -39,7 +41,8 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 | _putchar.c         | Contains our own puchar command permitting to print a character              |
 
 #### Flowchart
-We've started the project to re-write the `\_printf` by writting a flowchart to organise our code.
+We've started the project to re-write the `_printf` by writting a flowchart to organise our code.
+Here a link to our first flowchat on draw.io: ![My Printf Flowchart](https://i.ibb.co/b795Py1/Copie-de-my-printf-flowchart-drawio.png)
 
 ```mermaid
 flowchart TB
@@ -69,3 +72,29 @@ flowchart TB
     V --> B
     C --> Y((No)) --> D[Print *format<br>continue loop]
 ```
+
+### Examples
+
+```
+#include <stdio.h> 
+#include <string.h> 
+#include "main.h"
+
+int main(void) 
+{
+_printf("hello everynyan\n");
+_printf("i have %d apples\n",5); 
+_printf("my name is %s\n", "lancelot"); 
+_printf("have %i at a test is the same to say i have %c\n", 80, 'B'); 
+_printf("let's go for 100 %%\n"); return(0); 
+}
+```
+**STDOUT**:
+```
+hello everynyan
+i have 5 apples
+my name is lancelot
+have 80 at a test is the same to say i have B
+let's go for 100 %
+```
+
