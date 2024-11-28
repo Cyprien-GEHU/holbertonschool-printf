@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 
 	va_start(argument, format);
 	if (format == NULL)
-		return (0);
+		return (-1);
 
 	while (format[i] != '\0')
 	{
@@ -38,5 +38,6 @@ int _printf(const char *format, ...)
 	}
 	va_end(argument);
 	length -= 1;
+	printf("%d\n", length);
 	return (length);
 }
