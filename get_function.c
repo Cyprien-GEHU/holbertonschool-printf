@@ -9,7 +9,7 @@
  * Return: the length of charater print or "0" if we have nothing
  */
 
-int (*get_function(const char *format))(va_list)
+int (*get_function(const char *format))(va_list list)
 {
 	spec check[] = {
 		{"c", print_char},
