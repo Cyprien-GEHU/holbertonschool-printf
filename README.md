@@ -43,12 +43,11 @@ We've started the project to re-write the `\_printf` by writting a flowchart to 
 flowchart TB
     A[_printf] --> B(while
     *format)
-    B --> C{*format != '%'}
-    C --> X((No)) --> F[increment +1]
+    B --> C{*format == '%'}
+    C --> X((Yes)) --> F[increment +1]
     F --> G{if '%' + 1 == *CHECK}
-    G --> W((No)) --> K[return
-    an error]
-    G --Yes --> J[Identify
+    G --> W((No)) --> K[print % and format]
+    G --No --> J[Identify
     CHECK]
     J --> L{CHECK = 'c'}
     J --> M{CHECK = 's'}
