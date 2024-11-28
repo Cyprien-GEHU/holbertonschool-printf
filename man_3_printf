@@ -7,13 +7,13 @@ _printf(const char *format, ...);
 _printf FORMAT [ARGUMENT...]
 .SH DESCRIPTION
 .B _printf
-is a function that formats text and writes it to standard output. 
+is a function that formats text and writes it to standard output.
 .TP
 The arguments are formatted under control of the format operand.
 .TP
 .BR %d ", " %i ", " %s ", " %c ", and " %%
 are the five specifiers used.
-.SH OPTION 
+.SH OPTION
 .B [%d] or [%i]
 to print integer in base 10.
 .TP
@@ -27,7 +27,7 @@ to print a single character
 to print a % character alone.
 .SH EXAMPLES
 B _printf("My name is %s.\\n", "James Bond");
-.TP 
+.TP
 Output: My name is James\ Bond.
 .TP
 ---------------------------------------------

@@ -10,7 +10,7 @@ The repository contains **my_print.c** and **all the files** used to compile our
 
 Our program will be compiled enabling most of the commons and optional warning options and treating them all as errors, by following strict C language rules and using the older C89 santard with some extra features specific to GCC and ignoring warnings about mismatched printf style format strings
 
-This will be compiled this way : 
+This will be compiled this way :
 ``gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c``
 
 
@@ -41,14 +41,14 @@ We've started the project to re-write the `\_printf` by writting a flowchart to 
 
 ```mermaid
 flowchart TB
-    A[_printf] --> B(while 
+    A[_printf] --> B(while
     *format)
     B --> C{*format != '%'}
     C --> X((No)) --> F[increment +1]
     F --> G{if '%' + 1 == *CHECK}
     G --> W((No)) --> K[return
     an error]
-    G --Yes --> J[Identify 
+    G --Yes --> J[Identify
     CHECK]
     J --> L{CHECK = 'c'}
     J --> M{CHECK = 's'}
@@ -60,14 +60,14 @@ flowchart TB
     N --> S[call print_37]
     O --> T[call print_int_or_dec]
     P --> U[call print_int_or_dec]
-    Q --> V[increment 
+    Q --> V[increment
     continue loop]
     R --> V
     S --> V
     T --> V
     U --> V
     V --> B
-    C --> Y((Yes)) --> D[Print *format 
+    C --> Y((Yes)) --> D[Print *format
     continue loop]
     D --> B
 ```
