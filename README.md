@@ -1,12 +1,12 @@
-# Holberton School - \_printf
+# \_printf project - Holberton School C#25 :horse_racing:
 
-## Quick description
+## Quick description :pushpin:
 
 The repository contains **my_print.c** and **all the files** used to compile our own `printf()`
 \_printf() is a function that formats and prints data. This has the direction of use of the `printf()` of `<stdio.h>.
 
 
-## Compilation command
+## Compilation command :pencil:
 
 Our program will be compiled enabling most of the commons and optional warning options and treating them all as errors, by following strict C language rules and using the older C89 santard with some extra features specific to GCC and ignoring warnings about mismatched printf style format strings
 
@@ -14,19 +14,20 @@ This will be compiled this way :
 ``gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c``
 
 
-### Requirements
+### Requirements :wine_glass:
 
 Our project has been coded on Ubuntu 22.04 and gcc is version 13.2.0
 
-#### Betty Style
-All the files are written with the [Betty coiding style](https://www.holbertonschool.fr/post/quest-ce-que-la-regle-betty-dans-le-langage-de-programmation-c)
+#### Betty Style :no_entry_sign:
 
-#### Macro and functions allowed
+All the files are written with the [Betty coding style](https://www.holbertonschool.fr/post/quest-ce-que-la-regle-betty-dans-le-langage-de-programmation-c)
+
+#### Macro and functions allowed :white_check_mark:
 `write`
 `malloc`, `free`
 `va_start`, `va_end`, `va_copy`, `va_arg`
 
-#### Repository files list
+#### Repository files list :chart:
 
 | File name          | Description                                                                  |
 | -----------------: | ---------------------------------------------------------------------------- |
@@ -40,9 +41,9 @@ All the files are written with the [Betty coiding style](https://www.holbertonsc
 | man_3_printf       | This is the man page of our _printf                                          |
 | _putchar.c         | Contains our own puchar command permitting to print a character              |
 
-#### Flowchart
+#### Flowchart :symbols:
 We've started the project to re-write the `_printf` by writting a flowchart to organise our code.
-Here a link to our first flowchat on draw.io: ![My Printf Flowchart](https://i.ibb.co/b795Py1/Copie-de-my-printf-flowchart-drawio.png)
+Here a link to our first flowchat on draw.io: [My Printf Flowchart](https://i.ibb.co/b795Py1/Copie-de-my-printf-flowchart-drawio.png)
 
 ```mermaid
 flowchart TB
@@ -73,7 +74,7 @@ flowchart TB
     C --> Y((No)) --> D[Print *format<br>continue loop]
 ```
 
-### Examples
+### Examples :interrobang:
 
 ```
 #include <stdio.h> 
@@ -98,3 +99,4 @@ have 80 at a test is the same to say i have B
 let's go for 100 %
 ```
 
+### Authors :underage:
