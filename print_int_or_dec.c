@@ -1,6 +1,6 @@
-#include "main.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
  *print_int_or_dec - prints a integer or decimal

@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdarg.h>
 #include <stddef.h>
+#include <stdarg.h>
 
 /**
  * get_function - check the format with format and call the function

@@ -1,6 +1,6 @@
 #include <stdarg.h>
-#include <unistd.h>
 #include "main.h"
+#include <unistd.h>
 
 /**
  * print_char - print a character from va_list
