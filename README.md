@@ -29,14 +29,15 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 
 ## Repository files list :chart:
 
-| File name          | %Specifier | Description                                                                  |
+| File name          | % | Description                                                                  |
 | -----------------: | :--: | ---------------------------------------------------------------------------- |
 | _printf.c          |      | Contains the main function `_printf()`                                       |
-| get_function.c     |      | Contains `get_function()` that checks \*format and calls the function needed |
-| print_char.c       | %c |  Contains `print_char()` that prints a character | $${\color{yellow}%c}$$                   |
-| print_string.c     | %s | Contains `print_string()`that prints a string | $${\color{yellow}%s}$$                     |
-| print_37.c         | %% | Contains `print_37()`that printf '%' | $${\color{yellow}%%}$$                              |
-| print_int_or_dec.c | %d %i | Contains `print_int_or_dec()` that prints decimals | $${\color{yellow}%i}$$ $${\color{yellow}%d}$$  |
+| get_function.c     |      | `get_function()` checks \*format and calls the function needed |
+| print_char.c       | %c |  Contains `print_char()` that prints a character                   |
+| print_string.c     | %s | Contains `print_string()`that prints a string                     |
+| print_37.c         | %% | Contains `print_37()`that printf '%'                              |
+| print_int_or_dec.c | %d | Contains `print_int_or_dec()` that prints decimals | 
+|                    | %i | Contains `print_int_or_dec()` that prints decimals |
 | main.h             |      | Contains all the headers, prototypes and structure needed                    |
 | man_3_printf       |      | This is the man page of our _printf                                          |
 | _putchar.c         |      | Contains our own puchar command permitting to print a character              |
