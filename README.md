@@ -36,8 +36,7 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 | print_char.c       | %c |  Contains `print_char()` that prints a character                   |
 | print_string.c     | %s | Contains `print_string()`that prints a string                     |
 | print_37.c         | %% | Contains `print_37()`that printf '%'                              |
-| print_int_or_dec.c | %d |   | 
-|                    | %i | Contains `print_int_or_dec()` that prints decimals |
+| print_int_or_dec.c | %d / %i |  Contains `print_int_or_dec()` that prints decimals | 
 | main.h             |      | Contains all the headers, prototypes and structure needed                    |
 | man_3_printf       |      | This is the man page of our _printf                                          |
 | _putchar.c         |      | Contains our own puchar command permitting to print a character              |
