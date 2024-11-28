@@ -15,10 +15,12 @@ int (*get_function(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_37},
+		{"i", print_int_or_dec},
+		{"d", print_int_or_dec},
 		{NULL, NULL}
 	};
 	int i;
-	
+
 	for (i = 0; check[i].letter; i++)
 	{
 		if (*check[i].letter == *format)
