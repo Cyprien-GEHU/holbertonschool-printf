@@ -22,21 +22,31 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0')
 	{
-		if (format[i] != '%')
+		if (format[i] == '%')
 		{
-			_putchar(format[i]);
-			length++;
+			if (format[i + 1] == 'c' || format[i + 1] == 'd' ||
+			format[i + 1] == '%' || format[i + 1] == 'i' ||
+			format[i + 1] == 's')
+			{
+				i++;
+				function = get_function(&format[i]);
+				length += function(argument);
+			}
+
+			else
+			{
+				_putchar(format[i]);
+				length++;
+			}
 		}
 
 		else
 		{
-			i++;
-			function = get_function(&format[i]);
-			length += function(argument);
+			_putchar(format[i]);
+			length++;
 		}
 		i++;
 	}
 	va_end(argument);
-	length -= 1;
 	return (length);
 }
