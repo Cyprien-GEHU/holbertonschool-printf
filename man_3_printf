@@ -1,0 +1,44 @@
+.TH _PRINTF 1 _printf\-1.0
+.SH NAME
+_printf \- Format and print data
+.SH SYNOPSIS
+_printf(const char *format, ...);
+.TP
+_printf FORMAT [ARGUMENT...]
+.SH DESCRIPTION
+.B _printf
+is a function that formats text and writes it to standard output. 
+.TP
+The arguments are formatted under control of the format operand.
+.TP
+.BR %d ", " %i ", " %s ", " %c ", and " %%
+are the five specifiers used.
+.SH OPTION 
+.B [%d] or [%i]
+to print integer in base 10.
+.TP
+.B [%s]
+to print a string.
+.TP
+.B [%c]
+to print a single character
+.TP
+.B [%%]
+to print a % character alone.
+.SH EXAMPLES
+B _printf("My name is %s.\\n", "James Bond");
+.TP 
+Output: My name is James\ Bond.
+.TP
+---------------------------------------------
+.TP
+int hour = 24;
+.TP
+_printf("A day is %d h long.\\n", hour);
+.TP
+Output: A day is 24 h long.
+
+.SH AUHTORS
+Cyprien Gehu, Théo Lesmayoux and Adrien Vieilledent
+.SH COPYRIGHT
+Copyright © 2024  HOLBIE ONE, Inc.   License  GNU-HOLBERTON    Version 1  <https://www.holbertonschool.com>.
