@@ -38,6 +38,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(argument);
 	length -= 1;
-	printf("%d\n", length);
 	return (length);
 }
