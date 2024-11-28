@@ -100,3 +100,7 @@ let's go for 100 %
 ```
 
 ## Authors :underage:
+- Cyprien Gehu
+- Théo Lesmayoux
+- Adrien Vieilledent
+
