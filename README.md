@@ -74,6 +74,27 @@ flowchart TB
     C --> Y((No)) --> D[Print *format<br>continue loop]
 ```
 
+## How to use \_printf and man page
+
+```
+\_printf(FORMAT, ARGUMENTS)
+```
+To print formated data, use different specifiers in your FORMAT to print:
+
+ - `%c`: to print a `char'
+ - `%s`: to print a string
+ - `%%`: to print the character '%'
+ - `%i`or `%d`: to print a int base 10
+
+
+Here the man [man_3_printf](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/man_3_printf).
+
+To install the man page of \_printf:
+
+ - rename to file using the command `mv man_3_printf man_3_printf.1`
+ - And move the file into the man1 folder using this command  `mv man_3_printf.1 /usr/local/share/man/man1/`
+
+
 ## Examples :interrobang:
 
 ```
