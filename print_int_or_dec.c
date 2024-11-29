@@ -23,7 +23,7 @@ int print_int_or_dec(va_list args)
 		i++;
 	}
 
-	if (number >= 0 && number < 9)
+	if (number >= 0 && number <= 9)
 	{
 		_putchar(number + '0');
 		i++;
