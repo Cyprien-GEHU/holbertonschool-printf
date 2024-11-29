@@ -31,15 +31,15 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 
 | File name          | % | Description                                                                  |
 | -----------------: | :--: | ---------------------------------------------------------------------------- |
-| _printf.c          |      | Contains the main function `_printf()`                                       |
-| get_function.c     |      | `get_function()` checks \*format and calls the function needed |
-| print_char.c       | %c |  Contains `print_char()` that prints a character                   |
-| print_string.c     | %s | Contains `print_string()`that prints a string                     |
-| print_37.c         | %% | Contains `print_37()`that printf '%'                              |
-| print_int_or_dec.c | %d / %i |  Contains `print_int_or_dec()` that prints decimals |
-| main.h             |      | Contains all the headers, prototypes and structure needed                    |
-| man_3_printf       |      | This is the man page of our _printf                                          |
-| _putchar.c         |      | Contains our own puchar command permitting to print a character              |
+| [_printf.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/_printf.c)          |      | Contains the main function `_printf()`                                       |
+| [get_function.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/get_functions.c)     |      | `get_function()` checks \*format and calls the function needed |
+| [print_char.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_char.c)       | %c |  Contains `print_char()` that prints a character                   |
+| [print_string.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_string.c)     | %s | Contains `print_string()`that prints a string                     |
+| [print_37.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_37.c)         | %% | Contains `print_37()`that printf '%'                              |
+| [print_int_or_dec.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_int_or_dec.c) | %d / %i |  Contains `print_int_or_dec()` that prints decimals |
+| [main.h](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/main.h)             |      | Contains all the headers, prototypes and structure needed                    |
+| [man_3_printf](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/man_3_printf)       |      | This is the man page of our _printf                                          |
+| [_putchar.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/_putchar.c)         |      | Contains our own puchar command permitting to print a character              |
 
 ## Flowchart :symbols:
 We've started the project to re-write the `_printf` by writting a flowchart to organise our code.
