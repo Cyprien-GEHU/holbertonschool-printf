@@ -9,8 +9,7 @@
  */
 int main(void)
 {
-	int a = 87;
 
-    printf("%d et %d\n", a, 1237);
+	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
     return (0);
 }

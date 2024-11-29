@@ -100,7 +100,7 @@ let's go for 100 %
 ```
 
 ## Authors :underage:
-- Cyprien Gehu
-- Théo Lesmayoux
-- Adrien Vieilledent
+- [Cyprien Gehu](https://github.com/Cyprien-GEHU/)
+- [Théo Lesmayoux](https://github.com/LQK-MAKER/)
+- [Adrien Vieilledent](https://github.com/vlldnt/)
 

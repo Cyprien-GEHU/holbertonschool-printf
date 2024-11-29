@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include <stdio.h>
 #include "main.h"
 /**
  *print_int_or_dec - prints a integer or decimal
@@ -10,41 +9,25 @@
 int print_int_or_dec(va_list args)
 {
 	int number = va_arg(args, int);
-	int length;
+	unsigned int i = 0;
+	int div = 1;
 
-	length = print_i(number);
-	printf(" %d", length);
-
-return (length);
-}
-
-/**
- * print_int - print the integer with recursivity
- * Recursivity of the fucntion
- * @n: lenght returned
- * Return: lenght of characters
- */
-
-int print_i(int n)
-{
-	int num = n;
-	int l = 0;
-
-	if (num < 0)
+	if (number < 0)
 	{
-		_putchar(45);
-		num = -num;
-		l++;
+		_putchar('-');
+		number *= -1;
+		i++;
+	}
+	while (number / div >= 10)
+	{
+		div *= 10;
 	}
 
-	if (num / 10 != 0)
+	while (div >= 1)
 	{
-		l++;
-		print_i(num / 10);
+		_putchar((number / div) % 10 + '0');
+		div /= 10;
+		i++;
 	}
-
-	_putchar(num % 10 + '0');
-	l++;
-
-return (l);
+	return (i);
 }
