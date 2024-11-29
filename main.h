@@ -12,7 +12,7 @@ int print_int_or_dec(va_list args);
 int print_i(int n);
 
 /**
- * struct specifier - struct comparer and call function
+ * struct specifier - struct created to comparer and call function
  * @letter : letter for compare with format
  * @function : call a function for print
  *

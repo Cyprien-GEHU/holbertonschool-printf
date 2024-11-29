@@ -4,9 +4,9 @@
 #include <stdio.h>
 
 /**
- * print_string - print more than one character
+ * print_string - print a string
  * @list: list received to print
- * Return: 0
+ * Return: number of characters printed
  */
 
 int print_string(va_list list)

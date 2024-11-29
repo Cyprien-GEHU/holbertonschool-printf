@@ -3,8 +3,9 @@
 #include <stdarg.h>
 
 /**
- * _printf - print a message on printf
- * @format : the message and the type of data
+ * _printf - outputs formatted text to the standard output
+ * format used : int, char, char*, '%'
+ * @format : input with the format specifier %[SPECIFIER] or just a  string
  *
  * Return: the number of character printed
  */

@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  *print_int_or_dec - prints a integer or decimal
- *@args: argument to print
- *Return: number of characters to print
+ *@args: list of argument to print
+ *Return: number of digits printed
  */
 
 int print_int_or_dec(va_list args)

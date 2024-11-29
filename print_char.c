@@ -3,9 +3,9 @@
 #include <unistd.h>
 
 /**
- * print_char - print a character from va_list
+ * print_char - print a character from argument in  va_list
  * @list: list where the character is
- * Return: 1
+ * Return: 1 (length of character)
  */
 
 int print_char(va_list list)

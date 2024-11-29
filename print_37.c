@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print_37 - prints the char %.
- * @list : argument (void)
- * Return: 1
+ * print_37 - prints the character %.
+ * @list : void here 'cause we don't need it
+ * Return: 1 (length)
  */
 
 int print_37(va_list list)

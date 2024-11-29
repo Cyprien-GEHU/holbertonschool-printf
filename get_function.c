@@ -3,10 +3,12 @@
 #include <stdarg.h>
 
 /**
- * get_function - check the format with format and call the function
- * @format: the format after "%"
+ * get_function - check the %[SPECIFIER] if it's in the list *CHECK
+ * and call the function
  *
- * Return: the length of charater print or "0" if we have nothing
+ * @format: string received with a character "%" or not
+ *
+ * Return: the length of character print or NULL if we have nothing
  */
 
 int (*get_function(const char *format))(va_list list)
