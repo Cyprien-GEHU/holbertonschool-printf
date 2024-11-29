@@ -32,7 +32,7 @@ All the files are written with the [Betty coding style](https://www.holbertonsch
 | File name          | % | Description                                                                  |
 | -----------------: | :--: | ---------------------------------------------------------------------------- |
 | [_printf.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/_printf.c)          |      | Contains the main function `_printf()`                                       |
-| [get_function.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/get_functions.c)     |      | `get_function()` checks \*format and calls the function needed |
+| [get_function.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/get_function.c)     |      | `get_function()` checks \*format and calls the function needed |
 | [print_char.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_char.c)       | %c |  Contains `print_char()` that prints a character                   |
 | [print_string.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_string.c)     | %s | Contains `print_string()`that prints a string                     |
 | [print_37.c](https://github.com/Cyprien-GEHU/holbertonschool-printf/blob/main/print_37.c)         | %% | Contains `print_37()`that printf '%'                              |
