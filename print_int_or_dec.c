@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,10 +9,7 @@
 int print_int_or_dec(va_list args)
 {
 	int number = va_arg(args, int);
-	int i = 0;
-	int n = 0;
-	int digit;
-	int x = number;
+	unsigned int i = 0;
 	int div = 1;
 
 	if (number < 0)
@@ -22,30 +18,16 @@ int print_int_or_dec(va_list args)
 		number *= -1;
 		i++;
 	}
-
-	if (number >= 0 && number <= 9)
+	while (number / div >= 10)
 	{
-		_putchar(number + '0');
-		i++;
+		div *= 10;
 	}
 
-	if (number > 9)
+	while (div >= 1)
 	{
-		while (x / 10 != 0)
-		{
-			n++;
-			x = x / 10;
-			div *= 10;
-		}
-
-		while (n >= 0)
-		{
-			digit = (number / div) % 10;
-			_putchar(digit + '0');
-			div /= 10;
-			n--;
-			i++;
-		}
+		_putchar((number / div) % 10 + '0');
+		div /= 10;
+		i++;
 	}
 	return (i);
 }
