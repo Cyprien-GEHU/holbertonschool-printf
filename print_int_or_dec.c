@@ -1,51 +1,50 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "main.h"
-
 /**
  *print_int_or_dec - prints a integer or decimal
  *@args: argument to print
- *Return: number of charcters to printed
+ *Return: number of characters to print
  */
+
 int print_int_or_dec(va_list args)
 {
 	int number = va_arg(args, int);
-	int i = 0;
-	int n = 0;
-	int digit;
-	int x = number;
-	int div = 1;
+	int length;
 
-	if (number < 0)
+	length = print_i(number);
+	printf(" %d", length);
+
+return (length);
+}
+
+/**
+ * print_int - print the integer with recursivity
+ * Recursivity of the fucntion
+ * @n: lenght returned
+ * Return: lenght of characters
+ */
+
+int print_i(int n)
+{
+	int num = n;
+	int l = 0;
+
+	if (num < 0)
 	{
-		_putchar('-');
-		number *= -1;
-		i++;
+		_putchar(45);
+		num = -num;
+		l++;
 	}
 
-	if (number >= 0 && number < 9)
+	if (num / 10 != 0)
 	{
-		_putchar(number + '0');
-		i++;
+		l++;
+		print_i(num / 10);
 	}
 
-	if (number > 9)
-	{
-		while (x / 10 != 0)
-		{
-			n++;
-			x = x / 10;
-			div *= 10;
-		}
+	_putchar(num % 10 + '0');
+	l++;
 
-		while (n >= 0)
-		{
-			digit = (number / div) % 10;
-			_putchar(digit + '0');
-			div /= 10;
-			n--;
-			i++;
-		}
-	}
-	return (i);
+return (l);
 }

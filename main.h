@@ -9,6 +9,7 @@ int print_37(va_list list);
 int (*get_function(const char *format))(va_list list);
 int _putchar(char chara);
 int print_int_or_dec(va_list args);
+int print_i(int n);
 
 /**
  * struct specifier - struct comparer and call function
