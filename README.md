@@ -77,7 +77,7 @@ flowchart TB
 ## How to use \_printf and man page
 
 `
-\_printf(FORMAT, ARGUMENTS)
+_printf(FORMAT, ARGUMENTS)
 `
 To print formated data, use different specifiers in your FORMAT to print:
 
